@@ -45,15 +45,13 @@ func (set *Set) Union(anotherSet *Set) *Set {
 
 // main method
 func main() {
-	var set *Set
-	set = &Set{}
+	var set = &Set{}
 	set.New()
 	set.AddElement(1)
 	set.AddElement(2)
 	fmt.Println("initial set", set)
 	fmt.Println(set.ContainsElement(1))
-	var anotherSet *Set
-	anotherSet = &Set{}
+	var anotherSet = &Set{}
 	anotherSet.New()
 	anotherSet.AddElement(2)
 	anotherSet.AddElement(4)
