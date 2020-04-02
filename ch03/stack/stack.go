@@ -43,13 +43,14 @@ func (stack *Stack) Pop() *Element {
 	stack.elementCount = len(stack.elements)
 	return element
 }
+
 func main() {
-	var stack *Stack = &Stack{}
+	var stack = &Stack{}
 	stack.New()
-	var element1 *Element = &Element{3}
-	var element2 *Element = &Element{5}
-	var element3 *Element = &Element{7}
-	var element4 *Element = &Element{9}
+	var element1 = &Element{3}
+	var element2 = &Element{5}
+	var element3 = &Element{7}
+	var element4 = &Element{9}
 	stack.Push(element1)
 	stack.Push(element2)
 	stack.Push(element3)
